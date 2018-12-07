@@ -54,6 +54,7 @@ class SpacesBloc {
     Timer.periodic(Duration(seconds:1), (_) {
 
       SpacesDao.getSpaces().then((SpacesAPIState data) {
+        print('Made a lamda call ... ${spaces[0].balance} ... ${spaces[1].balance} ... ${spaces[2].balance} ... ${spaces[3].balance}');
         spaces[0].balance = data.mainBalance;
         spaces[1].balance = data.savingBalance;
         spaces[2].balance = data.travelBalance;
