@@ -12,32 +12,32 @@ class SpacesBloc {
   List<SpaceState> spaces = [
     SpaceState(
         id: "1",
-        name: "Main space",
-        balance: "10.0",
+        name: "Main",
+        balance: "Loading balance...",
         location: "Your primary space",
         image: "assets/img/mars.png",
         picture: "https://www.nasa.gov/sites/default/files/thumbnails/image/pia21723-16.jpg"
     ),
     SpaceState(
         id: "2",
-        name: "Saving Space",
-        balance: "10.0",
+        name: "Saving",
+        balance: "Loading balance...",
         location: "Let's save some money",
         image: "assets/img/neptune.png",
         picture: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/images/110411main_Voyager2_280_yshires.jpg"
     ),
     SpaceState(
         id: "3",
-        name: "Travel Space",
-        balance: "10.0",
+        name: "Travel",
+        balance: "Loading balance...",
         location: "Space to meet travel goals",
         image: "assets/img/moon.png",
         picture: "https://farm5.staticflickr.com/4086/5052125139_43c31b7012.jpg"
     ),
     SpaceState(
         id: "4",
-        name: "Gift Space",
-        balance: "10.0",
+        name: "Gift",
+        balance: "Loading balance...",
         location: "Buy some gifts.",
         image: "assets/img/earth.png",
         picture: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/iss042e340851_1.jpg"

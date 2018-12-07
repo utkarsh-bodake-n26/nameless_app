@@ -17,6 +17,11 @@ class Style {
       fontSize: 18.0,
       fontWeight: FontWeight.w600
   );
+  static final balanceTextStyle = baseTextStyle.copyWith(
+      color: Colors.white,
+      fontSize: 24.0,
+      fontWeight: FontWeight.w800
+  );
   static final headerTextStyle = baseTextStyle.copyWith(
       color: Colors.white,
       fontSize: 20.0,

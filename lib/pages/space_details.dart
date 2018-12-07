@@ -40,7 +40,7 @@ class SpaceDetails extends StatelessWidget {
           new Container(height: 4.0),
           new Text(spaceState.name, style: Style.titleTextStyle),
           new Container(height: 10.0),
-          new Text(spaceState.balance, style: Style.titleTextStyle),
+          new Text(spaceState.balance, style: Style.balanceTextStyle),
           new Container(height: 4.0),
           new Text(spaceState.location, style: Style.commonTextStyle),
         ],
@@ -50,7 +50,7 @@ class SpaceDetails extends StatelessWidget {
 
     final spaceCard = new Container(
       child: spaceCardContent,
-      height: horizontal ? 124.0 : 154.0,
+      height: horizontal ? 130.0 : 154.0,
       margin: horizontal
           ? new EdgeInsets.only(left: 46.0)
           : new EdgeInsets.only(top: 72.0),
