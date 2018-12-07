@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+import 'package:nameless_app/models/spaces_state.dart';
+import 'package:nameless_app/blocs/spaces_bloc.dart';
 
 class SpaceMainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SpacesBloc spacesBloc = SpacesProvider.of(context);
 
     return Scaffold(
       appBar: AppBar(
