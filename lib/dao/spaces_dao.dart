@@ -14,7 +14,12 @@ class SpacesDao {
         .get(Uri.parse('$_spacesAPI'))
         .then((res) => res.body)
         .then(json.decode)
-        .then((data) => SpacesAPIState.fromJSON(data))
+        .then((data) => SpacesAPIState(
+              mainBalance: data["main"].toString(),
+              savingBalance: data["saving"].toString(),
+              travelBalance: data["travel"].toString(),
+              giftBalance: data["gift"].toString()
+          ))
         .catchError((error) => SpacesAPIState.initial());
   }
 }

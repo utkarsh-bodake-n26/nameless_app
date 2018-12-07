@@ -54,11 +54,10 @@ class SpacesBloc {
     Timer.periodic(Duration(seconds:1), (_) {
 
       SpacesDao.getSpaces().then((SpacesAPIState data) {
-//          print('@@@ $data');
-        spaces[0].balance = data.mainBalance.toString();
-        spaces[1].balance = data.savingBalance.toString();
-        spaces[2].balance = data.travelBalance.toString();
-        spaces[3].balance = data.giftBalance.toString();
+        spaces[0].balance = data.mainBalance;
+        spaces[1].balance = data.savingBalance;
+        spaces[2].balance = data.travelBalance;
+        spaces[3].balance = data.giftBalance;
           _spacesStateSubject.add(spaces);
       });
     });

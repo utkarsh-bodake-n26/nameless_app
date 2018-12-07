@@ -19,7 +19,7 @@ class AppBody extends StatelessWidget {
           builder: (BuildContext context, AsyncSnapshot<List<SpaceState>> snapshot) {
 
             List<SpaceState> spaces = snapshot.data;
-            print ('####### zhali re setting: $spaces');
+//            print ('####### zhali re setting: $spaces');
 
             return SingleChildScrollView(
               child: Padding(

@@ -1,10 +1,10 @@
 
 class SpacesAPIState {
 
-  final double mainBalance;
-  final double savingBalance;
-  final double travelBalance;
-  final double giftBalance;
+  final String mainBalance;
+  final String savingBalance;
+  final String travelBalance;
+  final String giftBalance;
 
   SpacesAPIState({
     this.mainBalance,
@@ -14,21 +14,10 @@ class SpacesAPIState {
   });
 
   SpacesAPIState.initial()
-      : mainBalance = 1.1,
-        savingBalance = 2.2,
-        travelBalance = 3.3,
-        giftBalance = 4.4;
-
-  static SpacesAPIState fromJSON(Map<String, double> data) {
-
-    print('### $data');
-    return SpacesAPIState(
-        mainBalance: data["main"],
-        savingBalance: data["saving"],
-        travelBalance: data["travel"],
-        giftBalance: data["gift"]
-    );
-  }
+      : mainBalance = 'Loading balance...',
+        savingBalance = 'Loading balance...',
+        travelBalance = 'Loading balance...',
+        giftBalance = 'Loading balance...';
 
   @override
   String toString() => '''
