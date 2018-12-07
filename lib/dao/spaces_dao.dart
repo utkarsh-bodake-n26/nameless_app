@@ -9,12 +9,12 @@ class SpacesDao {
   static final http.Client _httpClient = http.Client();
   static final String _spacesAPI = '${constants.spacesAPI}';
 
-  static Future<SpacesState> getSpaces() async {
+  static Future<SpacesAPIState> getSpaces() async {
     return _httpClient
         .get(Uri.parse('$_spacesAPI'))
         .then((res) => res.body)
         .then(json.decode)
-        .then((data) => SpacesState.fromJSON(data))
-        .catchError((error) => SpacesState.initial());
+        .then((data) => SpacesAPIState.fromJSON(data))
+        .catchError((error) => SpacesAPIState.initial());
   }
 }

@@ -13,12 +13,13 @@ class AppBody extends StatelessWidget {
     return new Expanded(
       child: new Container(
         color: new Color(0xFF736AB7),
-        child: StreamBuilder<SpacesState>(
-          initialData: spacesBloc.spacesState,
+        child: StreamBuilder<List<SpaceState>>(
+          initialData: spacesBloc.spaces,
           stream: spacesBloc.spacesStateSubjectStream,
-          builder: (BuildContext context, AsyncSnapshot<SpacesState> snapshot) {
+          builder: (BuildContext context, AsyncSnapshot<List<SpaceState>> snapshot) {
 
-            print ('####### zhali re setting: ${snapshot.data}');
+            List<SpaceState> spaces = snapshot.data;
+            print ('####### zhali re setting: $spaces');
 
             return SingleChildScrollView(
               child: Padding(
