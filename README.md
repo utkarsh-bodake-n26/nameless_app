@@ -1,6 +1,6 @@
 # Nameless App
 
-Client app for the N26 Serverless Hackathon.
+Client app for the Serverless Hackathon.
 
 ## Getting Started
 
